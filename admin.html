@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eurosolve Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="logo">Eurosolve Admin</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <!-- DASHBOARD HEADER -->
+  <section class="hero">
+    <h1>Admin Dashboard</h1>
+    <p>Manage bookings, payments, and view revenue analytics.</p>
+  </section>
+
+  <!-- BOOKINGS LIST -->
+  <section id="bookings-section" class="card">
+    <h2>Bookings</h2>
+    <div id="bookingList">
+      <p>Loading bookings...</p>
+    </div>
+  </section>
+
+  <!-- REVENUE ANALYTICS -->
+  <section id="analytics-section" class="card">
+    <h2>Revenue Analytics</h2>
+    <canvas id="revenueChart" width="400" height="200"></canvas>
+  </section>
+
+  <!-- MODULE SCRIPT -->
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
